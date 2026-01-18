@@ -1,0 +1,93 @@
+
+/*
+older concepts css
+*{
+  box-sizing: border-box;
+}
+
+.mobiles{
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+  display: table;
+  clear: both;
+}
+
+.mobile{
+  width: 25%;
+  text-align: center;
+  float: left;
+  padding: 10px;
+}
+
+figure img {
+  width: 100%;
+}
+
+figure {
+  margin: 0%;
+  box-shadow: 1px 1px 10px lightblue;
+  padding: 10px;
+}
+*/
+
+.banner1,.banner2,
+.banner3{
+  width: 100%;
+  height: 550px;
+  background-image:url("./MobileStore/assets/bg.jpg") ;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.banner2{ 
+  background-image:url("./MobileStore/assets/banner2.jpg") ;
+}
+
+.banner3{
+  background-image: url("./MobileStore/assets/banner3.jpg");
+}
+
+header{
+  border-bottom: 1px red solid;
+  
+}
+
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+    
+  .product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+.product-card img {
+   transition: transform 0.3s ease;
+  }
+  
+.product-card:hover img {
+    transform: scale(1.05);
+  }
+
+form p {
+  color: red;
+  padding: 0 10px;
+}
+
+aside{
+  border-right: 1px solid grey;
+  text-align: center;
+  padding: 50px 30px;
+}
+
+aside button {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  border: none;
+}
