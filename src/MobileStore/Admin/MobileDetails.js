@@ -32,7 +32,7 @@ const MobileDetails = () => {
                           </div>
 
                       </div>
-
+                       
                     </div>
                 </div>
                   
