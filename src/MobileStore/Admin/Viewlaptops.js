@@ -16,7 +16,7 @@ const Viewlaptops = () => {
 
   useEffect(() => {
     axios
-      .get(`https://696d32f5f4a79b315180bef2.mockapi.io/laptops`)
+      .get(`http://localhost:5000/laptops`)
       .then((res) => {
         setLaptops(res.data);
       })
@@ -26,7 +26,7 @@ const Viewlaptops = () => {
   });
   const deleteLaptop = (lid) => {
     axios
-      .delete(`https://696d32f5f4a79b315180bef2.mockapi.io/laptops/${lid}`)
+      .delete(`http://localhost:5000/laptops/${lid}`)
       .then(() => {
         alert("laptop deleted");
       })
@@ -36,7 +36,7 @@ const Viewlaptops = () => {
   };
   const getOneRecord = (lid) => {
     axios
-      .get(`https://696d32f5f4a79b315180bef2.mockapi.io/laptops/${lid}`)
+      .get(`http://localhost:5000/laptops/${lid}`)
       .then((res) => setlaptop(res.data))
       .catch((err) => console.log("err"));
   };
@@ -57,7 +57,7 @@ const Viewlaptops = () => {
    
   const submitHandler = (e) =>{
       e.preventDefault()
-      axios.put(`https://696d32f5f4a79b315180bef2.mockapi.io/laptops/${laptop.id}`,laptop)
+      axios.put(`http://localhost:5000/laptops/${laptop.id}`,laptop)
       .then(()=>{alert('laptop updated')})
       .catch((err)=>{console.log(err);
       })

@@ -7,7 +7,7 @@ const MobileDetails = () => {
   const [details, setDetails] = useState({})
   const { id } = useParams()
   useEffect(()=>{
-    axios.get(`https://696d32f5f4a79b315180bef2.mockapi.io/mobiles/${id}`)
+    axios.get(`http://localhost:5000/mobiles/${id}`)
     .then((res)=> setDetails(res.data))
     .catch((err)=>console.log(err))
   })

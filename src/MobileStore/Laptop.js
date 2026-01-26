@@ -7,7 +7,7 @@ const Laptops = () => {
   const [data,setData] = useState([])
   const [brand,setbrand ]= useState("")
   useEffect(()=>{
-    axios.get(`https://696d32f5f4a79b315180bef2.mockapi.io/laptops`)
+    axios.get(`http://localhost:5000/laptops`)
     .then((res)=>{
               if(brand === ''){
                 setData(res.data)

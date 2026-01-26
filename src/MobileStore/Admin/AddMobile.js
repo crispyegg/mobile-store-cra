@@ -12,7 +12,7 @@ const AddMobile = () => {
        e.preventDefault()
        console.log(mobile);
 
-       axios.post(`https://696d32f5f4a79b315180bef2.mockapi.io/mobiles`, mobile)
+       axios.post(`http://localhost:5000/mobiles`, mobile)
             .then(()=>{
               alert('new mobile added')
             })

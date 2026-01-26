@@ -15,7 +15,7 @@ const ViewMobile = () => {
   });
   useEffect(() => {
     axios
-      .get(`https://696d32f5f4a79b315180bef2.mockapi.io/mobiles`)
+      .get(`http://localhost:5000/mobiles`)
       .then((res) => {
         setMobiles(res.data);
       })

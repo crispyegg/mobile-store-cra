@@ -10,7 +10,7 @@ const AddLaptop = () => {
   const submitHandler = (e) =>{
     e.preventDefault()
 
-    axios.post(`https://696d32f5f4a79b315180bef2.mockapi.io/laptops` ,laptop)
+    axios.post(`http://localhost:5000/laptops` ,laptop)
     .then(()=>{
       alert('new laptop added')
     })
